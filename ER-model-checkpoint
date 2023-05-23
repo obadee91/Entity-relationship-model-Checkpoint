@@ -1,0 +1,43 @@
+            +-------------------+
+            |     Gymnasium     |
+            +-------------------+
+            | id                |
+            | name              |
+            | address           |
+            | phone_number      |
+            +-------------------+
+                     |
+                     |
+          +----------+---------+
+          |                    |
+   +-------------+    +---------------+
+   |   Session   |    |     Coach     |
+   +-------------+    +---------------+
+   | id          |    | id            |
+   | type        |    | last_name     |
+   | schedule    |    | first_name    |
+   | max_capacity|    | age           |
+   | gymnasium_id|    | specialty     |
+   +-------------+    +---------------+
+                     |
+                     |
+            +----------------+
+            |    Member      |
+            +----------------+
+            | id             |
+            | last_name      |
+            | first_name     |
+            | address        |
+            | date_of_birth  |
+            | gender         |
+            | gymnasium_id   |
+            | session_id     |
+            +----------------+
+
+Explanation:
+
+The main entity is the Gymnasium, which has attributes such as id, name, address, and phone_number.
+Each Gymnasium can have multiple Sessions, which are characterized by their id, type (sport), schedule, maximum capacity, and the gymnasium_id they belong to.
+Each Session can have up to two Coaches, who have attributes like id, last_name, first_name, age, and specialty.
+Members are associated with a specific Gymnasium and Session. They have attributes like id, last_name, first_name, address, date_of_birth, gender, gymnasium_id, and session_id.
+This ER model represents the relationships between the Gymnasium, Session, Coach, and Member entities. It provides a basic structure for managing members, sessions, and coaches within the gymnasium chain.
